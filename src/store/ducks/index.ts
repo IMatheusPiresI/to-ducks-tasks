@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import toDucks from "./ducks/toDucks";
+import toDucks from "./toDucks";
 
 export default combineReducers({
   toDucks,

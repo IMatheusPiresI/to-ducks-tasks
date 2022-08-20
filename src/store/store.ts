@@ -2,7 +2,7 @@ import { createStore } from "redux";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
-import reducers from "./index";
+import reducers from "./ducks/index";
 
 const persistConfig = {
   key: "toDucksTasks",
