@@ -1,7 +1,7 @@
 import { FormEvent, useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { AnyAction, bindActionCreators, Dispatch } from "redux";
-import { ReducerState, ToDucks } from "../../@types/types";
+import { ReducerState, ToDucks } from "../../@types";
 import { editDuckTask } from "../../store/ducks/toDucks";
 import { Textarea } from "../DescTask/styles";
 import FormInput from "../FormInput";

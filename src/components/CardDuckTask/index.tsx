@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import { AnyAction, bindActionCreators, Dispatch } from "redux";
-import { PayloadAction } from "../../@types/types";
+import { PayloadAction } from "../../@types";
 import { removeDuckTask } from "../../store/ducks/toDucks";
 import IconDuckTask from "../IconDuckTask";
 import * as S from "./styles";

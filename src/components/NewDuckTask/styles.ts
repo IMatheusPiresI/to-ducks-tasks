@@ -7,6 +7,10 @@ export const Container = styled.section`
   box-shadow: 0px 0px 4px -1px var(--pink);
   border-radius: 10px;
   padding: 10px 20px;
+
+  @media (max-width: 630px) {
+    height: 21em;
+  }
 `;
 
 export const Title = styled.h1`
@@ -24,6 +28,13 @@ export const FormNewDuck = styled.form`
   margin: 0 auto;
   position: relative;
   justify-content: center;
+
+  @media (max-width: 630px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+  }
 `;
 
 export const Camera = styled.div`
@@ -53,6 +64,11 @@ export const ContainerInfo = styled.div`
 
   & textarea {
     margin-top: 15px;
+  }
+
+  @media (max-width: 630px) {
+    flex-direction: column;
+    margin-left: 0;
   }
 `;
 

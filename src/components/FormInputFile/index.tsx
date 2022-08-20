@@ -31,6 +31,7 @@ const FormInputFile = ({ id, setFile, file }: FormInputFile) => {
           <input type="file" id={id} onChange={handleSetFile} />
         </label>
       </S.BoxFile>
+      <p>Duck Photo</p>
     </S.ContainerFile>
   );
 };

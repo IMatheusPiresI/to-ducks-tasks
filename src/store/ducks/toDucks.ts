@@ -1,6 +1,4 @@
-// store/ducks/todo.ts
-
-import { ToDucksAction, ToDucks, PayloadAction } from "../../@types/types";
+import { ToDucksAction, ToDucks, PayloadAction } from "../../@types";
 
 // Action Types
 

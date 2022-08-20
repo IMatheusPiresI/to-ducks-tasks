@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { connect } from "react-redux";
-import { ReducerState, ToDucks } from "../../@types/types";
+import { ReducerState, ToDucks } from "../../@types";
 import CardDuckTask from "../CardDuckTask";
 import ModalDuckEditTask from "../ModalDuckEditTask";
 import NoDucksTask from "../NoDucksTask";
@@ -44,7 +44,7 @@ const SearchTasks = ({ toDucks }: SearchTasksProps) => {
       ));
     }
 
-    return toDucks.map((duckTask: any) => (
+    return toDucks.map((duckTask: ToDucks) => (
       <CardDuckTask
         key={duckTask.id}
         id={duckTask.id}

@@ -9,7 +9,7 @@ import { AnyAction, bindActionCreators, Dispatch } from "redux";
 import { addDuckTask } from "../../store/ducks/toDucks";
 import { connect } from "react-redux";
 import FormInputFile from "../FormInputFile";
-import { PayloadAction, ReducerState } from "../../@types/types";
+import { PayloadAction, ReducerState } from "../../@types";
 
 type NewDuckTaskProps = {
   addDuckTask: (payload: PayloadAction) => void;

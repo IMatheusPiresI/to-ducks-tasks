@@ -1,7 +1,7 @@
 import duck from "/duck.svg";
 import * as S from "./styles";
 import { connect } from "react-redux";
-import { ReducerState, ToDucks } from "../../@types/types";
+import { ReducerState, ToDucks } from "../../@types";
 
 type DuckCounterProps = {
   toDucks: ToDucks[];
