@@ -13,12 +13,16 @@ export const InputSearch = styled.input`
   background-color: transparent;
   padding: 0 4.5rem;
   color: var(--purple);
-  font-size: 20px;
+  font-size: 1.3rem;
   line-height: 24px;
   outline: none;
 
   &::placeholder {
     color: rgba(117, 6, 106, 0.68);
+  }
+
+  @media (max-width: 630px) {
+    font-size: 1rem;
   }
 `;
 

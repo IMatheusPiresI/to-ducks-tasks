@@ -40,8 +40,16 @@ export const Container = styled.article`
 `;
 
 export const DuckInfo = styled.div`
-  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
   margin-right: 1rem;
+  word-break: break-all;
+
+  @media (max-width: 630px) {
+    width: 90px;
+  }
 `;
 
 export const DuckPhotoBox = styled.div`
@@ -49,9 +57,6 @@ export const DuckPhotoBox = styled.div`
   height: 80px;
   background-color: var(--purpleLight);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
   border: 2px solid var(--purple);
 
@@ -59,20 +64,33 @@ export const DuckPhotoBox = styled.div`
     width: 100%;
     height: 100%;
   }
+
+  @media (max-width: 630px) {
+    width: 65px;
+    height: 65px;
+  }
 `;
 
 export const DuckName = styled.p`
   font-style: italic;
   color: var(--purple);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   margin-top: 0.3rem;
   text-align: center;
+
+  @media (max-width: 630px) {
+    font-size: 0.75rem;
+  }
 `;
 
 export const DuckDesc = styled.p`
   font-size: 1.3rem;
   color: var(--purpleLight);
   text-shadow: -1px -1px rgba(0, 0, 0, 0.6);
+
+  @media (max-width: 630px) {
+    font-size: 1rem;
+  }
 `;
 
 export const BoxActionButtons = styled.div`
