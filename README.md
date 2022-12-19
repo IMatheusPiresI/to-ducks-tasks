@@ -22,7 +22,7 @@ Repositório do projeto **ToDucks** desenvolvido para aprofundar os conhecimento
 
 <h3 id="inicio">🚀 Site do projeto</h3>
 
-[Visite o Site do Projeto MoviesApp](https://toducks.vercel.app/) 🎮
+[Visite o Site do Projeto ToDucks](https://toducks.vercel.app/) 🎮
 
 <h3 id="acessar-projeto">📁 Inicialização da Clonagem</h3>
 
