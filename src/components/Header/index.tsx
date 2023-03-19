@@ -1,7 +1,7 @@
-import * as S from "./styles";
+import * as S from './styles'
 
-import Logo from "../Logo";
-import DuckCounter from "../DuckCounter";
+import Logo from '../Logo'
+import DuckCounter from '../DuckCounter'
 
 const Header = () => {
   return (
@@ -11,7 +11,7 @@ const Header = () => {
         <DuckCounter />
       </S.BoxHeader>
     </S.Container>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

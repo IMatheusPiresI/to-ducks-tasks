@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Icon = styled.svg`
   width: 25px;
   height: 25px;
   color: var(--white);
-`;
+`
 
 export const BoxIcon = styled.button`
   width: 32px;
@@ -16,4 +16,4 @@ export const BoxIcon = styled.button`
   border: none;
   border-radius: 10px;
   box-shadow: 0px 0px 10px -1px var(--purple);
-`;
+`

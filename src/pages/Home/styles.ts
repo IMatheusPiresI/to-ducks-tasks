@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const MainContent = styled.main`
   width: 100%;
@@ -9,9 +9,9 @@ export const MainContent = styled.main`
   @media (max-width: 630px) {
     padding: 0 1em;
   }
-`;
+`
 
 export const SectionDuckTasks = styled.section`
   width: 100%;
   margin-top: 40px;
-`;
+`

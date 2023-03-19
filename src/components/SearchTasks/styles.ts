@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContainerDuckTasks = styled.section`
   width: 100%;
@@ -7,4 +7,4 @@ export const ContainerDuckTasks = styled.section`
   flex-direction: column;
   gap: 25px;
   margin-top: 40px;
-`;
+`

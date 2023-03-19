@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
@@ -15,4 +15,4 @@ export const Container = styled.div`
     line-height: 36px;
     margin-left: 16px;
   }
-`;
+`

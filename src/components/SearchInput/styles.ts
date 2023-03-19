@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
   position: relative;
-`;
+`
 
 export const InputSearch = styled.input`
   width: 100%;
@@ -24,7 +24,7 @@ export const InputSearch = styled.input`
   @media (max-width: 630px) {
     font-size: 1rem;
   }
-`;
+`
 
 export const ImageSearch = styled.img`
   width: 43px;
@@ -32,4 +32,4 @@ export const ImageSearch = styled.img`
   position: absolute;
   top: 0;
   left: 1.2rem;
-`;
+`

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
@@ -10,11 +10,7 @@ export const Container = styled.div`
   border-radius: 10px;
   box-shadow: 0px 0px 4px -1px var(--pink);
   height: 361px;
-  background: linear-gradient(
-    180deg,
-    #9b5c86 0%,
-    rgba(255, 255, 255, 0.81) 100%
-  );
+  background: linear-gradient(180deg, #9b5c86 0%, rgba(255, 255, 255, 0.81) 100%);
 
   & img {
     width: 372px;
@@ -27,4 +23,4 @@ export const Container = styled.div`
     line-height: 36px;
     color: var(--purpleLight);
   }
-`;
+`

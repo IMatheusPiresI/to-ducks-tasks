@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.article`
   width: 100%;
@@ -37,7 +37,7 @@ export const Container = styled.article`
       opacity: 1;
     }
   }
-`;
+`
 
 export const DuckInfo = styled.div`
   display: flex;
@@ -50,7 +50,7 @@ export const DuckInfo = styled.div`
   @media (max-width: 630px) {
     width: 90px;
   }
-`;
+`
 
 export const DuckPhotoBox = styled.div`
   width: 80px;
@@ -69,7 +69,7 @@ export const DuckPhotoBox = styled.div`
     width: 65px;
     height: 65px;
   }
-`;
+`
 
 export const DuckName = styled.p`
   font-style: italic;
@@ -81,7 +81,7 @@ export const DuckName = styled.p`
   @media (max-width: 630px) {
     font-size: 0.75rem;
   }
-`;
+`
 
 export const DuckDesc = styled.p`
   font-size: 1.3rem;
@@ -91,7 +91,7 @@ export const DuckDesc = styled.p`
   @media (max-width: 630px) {
     font-size: 1rem;
   }
-`;
+`
 
 export const BoxActionButtons = styled.div`
   display: flex;
@@ -99,4 +99,4 @@ export const BoxActionButtons = styled.div`
   position: absolute;
   right: 10px;
   top: -15px;
-`;
+`

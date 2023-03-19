@@ -1,9 +1,9 @@
-import Header from "../../components/Header";
-import NewDuckTask from "../../components/NewDuckTask";
+import Header from '../../components/Header'
+import NewDuckTask from '../../components/NewDuckTask'
 
-import * as S from "./styles";
+import * as S from './styles'
 
-import SearchTasks from "../../components/SearchTasks";
+import SearchTasks from '../../components/SearchTasks'
 
 function Home() {
   return (
@@ -16,7 +16,7 @@ function Home() {
         </S.SectionDuckTasks>
       </S.MainContent>
     </>
-  );
+  )
 }
 
-export default Home;
+export default Home

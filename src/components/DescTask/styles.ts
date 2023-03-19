@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Textarea = styled.textarea`
   width: 100%;
@@ -30,4 +30,4 @@ export const Textarea = styled.textarea`
     background-color: var(--purple);
     border-radius: 10px;
   }
-`;
+`

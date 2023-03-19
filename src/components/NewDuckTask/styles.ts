@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.section`
   width: 100%;
@@ -11,7 +11,7 @@ export const Container = styled.section`
   @media (max-width: 630px) {
     height: 21em;
   }
-`;
+`
 
 export const Title = styled.h1`
   text-align: center;
@@ -19,7 +19,7 @@ export const Title = styled.h1`
   font-size: 30px;
   line-height: 36px;
   color: var(--purple);
-`;
+`
 
 export const FormNewDuck = styled.form`
   width: 100%;
@@ -35,7 +35,7 @@ export const FormNewDuck = styled.form`
     gap: 12px;
     margin-top: 12px;
   }
-`;
+`
 
 export const Camera = styled.div`
   width: 50px;
@@ -50,7 +50,7 @@ export const Camera = styled.div`
     width: 50px;
     height: auto;
   }
-`;
+`
 
 export const ContainerInfo = styled.div`
   width: 100%;
@@ -70,7 +70,7 @@ export const ContainerInfo = styled.div`
     flex-direction: column;
     margin-left: 0;
   }
-`;
+`
 
 export const SubmitButton = styled.button`
   position: absolute;
@@ -82,4 +82,4 @@ export const SubmitButton = styled.button`
   color: var(--white);
   border: 1px solid var(--white);
   font-weight: 600;
-`;
+`

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContainerModal = styled.div`
   display: flex;
@@ -11,7 +11,7 @@ export const ContainerModal = styled.div`
   left: 0;
   padding: 0rem 1rem;
   background-color: rgba(0, 0, 0, 0.5);
-`;
+`
 
 export const Modal = styled.form`
   display: flex;
@@ -48,7 +48,7 @@ export const Modal = styled.form`
       transform: translateY(0px);
     }
   }
-`;
+`
 
 export const CloseButton = styled.button`
   position: absolute;
@@ -58,7 +58,7 @@ export const CloseButton = styled.button`
   border: none;
   font-size: 1.5rem;
   color: var(--purple);
-`;
+`
 
 export const SubmitButton = styled.button`
   width: 150px;
@@ -69,4 +69,4 @@ export const SubmitButton = styled.button`
   border: 1px solid var(--white);
   color: var(--white);
   font-weight: 600;
-`;
+`

@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 type PhotoImg = {
-  file: "photo" | "camera";
-};
+  file: 'photo' | 'camera'
+}
 
 export const ContainerFile = styled.div`
   width: 100px;
@@ -15,7 +15,7 @@ export const ContainerFile = styled.div`
     font-size: 14px;
     margin-top: 0.3rem;
   }
-`;
+`
 
 export const BoxFile = styled.div<PhotoImg>`
   width: 100px;
@@ -37,15 +37,15 @@ export const BoxFile = styled.div<PhotoImg>`
     position: absolute;
     cursor: pointer;
 
-    & input[type="file"] {
+    & input[type='file'] {
       display: none;
     }
   }
 
   & img {
-    width: ${({ file }) => (file === "photo" ? "100%" : "80px")};
-    height: ${({ file }) => (file === "photo" ? "100%" : "80px")};
-    border-radius: ${({ file }) => (file === "photo" ? "0%" : "0")};
+    width: ${({ file }) => (file === 'photo' ? '100%' : '80px')};
+    height: ${({ file }) => (file === 'photo' ? '100%' : '80px')};
+    border-radius: ${({ file }) => (file === 'photo' ? '0%' : '0')};
     transform: scale(1);
   }
-`;
+`
