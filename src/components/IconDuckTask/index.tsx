@@ -44,7 +44,11 @@ const IconDuckTask = ({ typeButton, ...rest }: IconDuckTaskProps) => {
     }
   }
 
-  return <S.BoxIcon {...rest}>{icon()}</S.BoxIcon>
+  return (
+    <S.BoxIcon {...rest} data-testid={typeButton}>
+      {icon()}
+    </S.BoxIcon>
+  )
 }
 
 export default IconDuckTask

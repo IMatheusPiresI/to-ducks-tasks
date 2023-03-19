@@ -32,7 +32,7 @@ const CardDuckTask = ({
       </S.DuckInfo>
       <S.DuckDesc>{duckTask}</S.DuckDesc>
       <div className='boxActionButtons'>
-        <IconDuckTask typeButton='edit' onClick={() => showModal(id)} />
+        <IconDuckTask typeButton='edit' name='edit' onClick={() => showModal(id)} />
         <IconDuckTask typeButton='delete' onClick={() => removeDuckTask({ id })} />
       </div>
     </S.Container>

@@ -10,7 +10,7 @@ type DuckCounterProps = {
 const DuckCounter = ({ toDucks }: DuckCounterProps) => {
   return (
     <S.Container>
-      <img src={duck} alt='' />
+      <img src={duck} alt='duck' />
       <p>{toDucks.length}</p>
     </S.Container>
   )
