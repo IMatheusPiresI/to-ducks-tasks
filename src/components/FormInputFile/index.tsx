@@ -10,8 +10,6 @@ type FormInputFile = InputHTMLAttributes<HTMLInputElement> & {
 
 const FormInputFile = ({ id, setFile, file }: FormInputFile) => {
   const handleSetFile = (event: any) => {
-    if (event.target.files.length <= 0) return
-
     const reader = new FileReader()
 
     reader.onload = (event) => {
@@ -28,7 +26,7 @@ const FormInputFile = ({ id, setFile, file }: FormInputFile) => {
       <S.BoxFile file={file ? 'photo' : 'camera'}>
         <img src={file ? file : duckCamera} alt='Photo Duck' />
         <label htmlFor={id}>
-          <input type='file' id={id} onChange={handleSetFile} />
+          <input type='file' id={id} name={id} onChange={handleSetFile} data-testid='file' />
         </label>
       </S.BoxFile>
       <p>Duck Photo</p>
