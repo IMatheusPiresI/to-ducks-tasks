@@ -24,7 +24,7 @@ const ModalDuckEditTask = ({
   const [file, setFile] = useState<string>('')
   const [duckName, setDuckName] = useState<string>('')
   const [duckDesc, setDuckDesc] = useState<string>('')
-
+  console.log(idEdit)
   const handleEditDuckTask = (event: FormEvent) => {
     event.preventDefault()
 
@@ -49,7 +49,7 @@ const ModalDuckEditTask = ({
 
   return (
     <S.ContainerModal>
-      <S.Modal onSubmit={handleEditDuckTask}>
+      <S.Modal onSubmit={handleEditDuckTask} data-testid='form'>
         <S.CloseButton type='button' onClick={closeModal}>
           X
         </S.CloseButton>
