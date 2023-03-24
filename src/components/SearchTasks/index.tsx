@@ -19,7 +19,6 @@ const SearchTasks = ({ toDucks }: SearchTasksProps) => {
   const handleShowModal = (id?: number | Event) => {
     if (typeof id === 'number') {
       setIdEdit(id)
-      console.log(id)
     }
     setShowModal(!showModal)
   }

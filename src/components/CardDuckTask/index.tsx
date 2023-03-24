@@ -4,6 +4,7 @@ import { PayloadAction } from '../../@types'
 import { removeDuckTask } from '../../store/ducks/toDucks'
 import IconDuckTask from '../IconDuckTask'
 import * as S from './styles'
+import duck from '/duck.svg'
 
 type CardDuckTaskProps = {
   id: number
@@ -26,7 +27,7 @@ const CardDuckTask = ({
     <S.Container>
       <S.DuckInfo>
         <S.DuckPhotoBox>
-          <img src={duckFile} alt='Duck photo' />
+          <img src={duckFile.length > 0 ? duckFile : duck} alt='Duck photo' />
         </S.DuckPhotoBox>
         <S.DuckName>{duckName}</S.DuckName>
       </S.DuckInfo>

@@ -4,7 +4,7 @@ import duck from '/duck.svg'
 const NoDucksTask = () => {
   return (
     <S.Container>
-      <img src={duck} alt='' />
+      <img src={duck} alt='empty duck' />
       <p>No duck task added...</p>
     </S.Container>
   )

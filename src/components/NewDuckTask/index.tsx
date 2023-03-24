@@ -22,11 +22,10 @@ const NewDuckTask = ({ addDuckTask }: NewDuckTaskProps) => {
 
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault()
-
     const payload = {
       id: Math.floor(Math.random() * 99999),
       name,
-      file: file ? file : duck,
+      file: file,
       desc,
     }
 
@@ -49,7 +48,7 @@ const NewDuckTask = ({ addDuckTask }: NewDuckTaskProps) => {
               minLength={1}
               maxLength={10}
               max={3}
-              onChange={(e) => setName(e.target.value.trim())}
+              onChange={(e) => setName(e.target.value)}
               required
             />
             <DescTask

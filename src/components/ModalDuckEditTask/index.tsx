@@ -24,7 +24,6 @@ const ModalDuckEditTask = ({
   const [file, setFile] = useState<string>('')
   const [duckName, setDuckName] = useState<string>('')
   const [duckDesc, setDuckDesc] = useState<string>('')
-  console.log(idEdit)
   const handleEditDuckTask = (event: FormEvent) => {
     event.preventDefault()
 
@@ -38,13 +37,13 @@ const ModalDuckEditTask = ({
   }
 
   useEffect(() => {
-    toDucks.filter((duckTask) => {
-      if (duckTask.id === idEdit) {
-        setFile(duckTask.file)
-        setDuckName(duckTask.name)
-        setDuckDesc(duckTask.desc)
-      }
-    })
+    const duckTask = toDucks.find((duckTask) => duckTask.id === idEdit)
+
+    if (!duckTask) return
+
+    setFile(duckTask.file)
+    setDuckName(duckTask.name)
+    setDuckDesc(duckTask.desc)
   }, [])
 
   return (
@@ -65,7 +64,7 @@ const ModalDuckEditTask = ({
           value={duckDesc}
           onChange={(e) => setDuckDesc(e.target.value)}
         />
-        <S.SubmitButton type='submit'>Enviar</S.SubmitButton>
+        <S.SubmitButton type='submit'>Submit</S.SubmitButton>
       </S.Modal>
     </S.ContainerModal>
   )

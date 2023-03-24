@@ -52,4 +52,40 @@ describe('CardDuckTask Tests', () => {
 
     expect(handleShowModal).toBeCalledTimes(1)
   })
+
+  it('should be render duck photo', () => {
+    const handleShowModal = jest.fn()
+    renderProvider(
+      <CardDuckTask
+        duckFile='https://t.ctcdn.com.br/VPosJ-jijekcHEJCcf9yb1hjHcs=/51x28:971x545/920x518/smart/i381149.jpeg'
+        duckName='test'
+        duckTask='description task'
+        id={1}
+        showModal={handleShowModal}
+      />,
+    )
+
+    const imgTask = screen.getByAltText(/duck photo/i)
+
+    expect(imgTask).toHaveAttribute(
+      'src',
+      'https://t.ctcdn.com.br/VPosJ-jijekcHEJCcf9yb1hjHcs=/51x28:971x545/920x518/smart/i381149.jpeg',
+    )
+  })
+  it('should be render duck photo', () => {
+    const handleShowModal = jest.fn()
+    renderProvider(
+      <CardDuckTask
+        duckFile=''
+        duckName='test'
+        duckTask='description task'
+        id={1}
+        showModal={handleShowModal}
+      />,
+    )
+
+    const imgTask = screen.getByAltText(/duck photo/i)
+
+    expect(imgTask).toHaveAttribute('src', 'test-file-stub')
+  })
 })
