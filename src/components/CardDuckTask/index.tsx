@@ -24,7 +24,7 @@ const CardDuckTask = ({
   removeDuckTask,
 }: CardDuckTaskProps) => {
   return (
-    <S.Container>
+    <S.Container data-testid='task'>
       <S.DuckInfo>
         <S.DuckPhotoBox>
           <img src={duckFile.length > 0 ? duckFile : duck} alt='Duck photo' />

@@ -49,7 +49,7 @@ const ModalDuckEditTask = ({
   return (
     <S.ContainerModal>
       <S.Modal onSubmit={handleEditDuckTask} data-testid='form'>
-        <S.CloseButton type='button' onClick={closeModal}>
+        <S.CloseButton type='button' onClick={closeModal} data-testid='closeModal'>
           X
         </S.CloseButton>
         <h2>Editing duck task</h2>

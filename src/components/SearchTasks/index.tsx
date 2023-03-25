@@ -16,18 +16,23 @@ const SearchTasks = ({ toDucks }: SearchTasksProps) => {
   const [idEdit, setIdEdit] = useState<number>(0)
   const [showModal, setShowModal] = useState<boolean>(false)
 
-  const handleShowModal = (id?: number | Event) => {
-    if (typeof id === 'number') {
-      setIdEdit(id)
-    }
-    setShowModal(!showModal)
+  const handleShowModal = (id: number) => {
+    setIdEdit(id)
+    setShowModal(true)
   }
 
-  const duckTasksFiltered = toDucks.filter(
-    (duckTask: ToDucks) =>
-      duckTask.name.toLowerCase().includes(filterTasks.toLowerCase()) ||
-      duckTask.desc.toLowerCase().includes(filterTasks.toLowerCase()),
-  )
+  const handleCloseModal = () => {
+    setShowModal(false)
+  }
+
+  const duckTasksFiltered =
+    filterTasks.trim() !== ''
+      ? toDucks.filter(
+          (duckTask: ToDucks) =>
+            duckTask.name.toLowerCase().includes(filterTasks.toLowerCase()) ||
+            duckTask.desc.toLowerCase().includes(filterTasks.toLowerCase()),
+        )
+      : []
 
   const renderCards = () => {
     if (duckTasksFiltered.length > 0) {
@@ -61,7 +66,7 @@ const SearchTasks = ({ toDucks }: SearchTasksProps) => {
       <S.ContainerDuckTasks>
         {toDucks.length > 0 ? renderCards() : <NoDucksTask />}
       </S.ContainerDuckTasks>
-      {showModal && <ModalDuckEditTask closeModal={handleShowModal} idEdit={idEdit} />}
+      {showModal && <ModalDuckEditTask closeModal={handleCloseModal} idEdit={idEdit} />}
     </>
   )
 }
