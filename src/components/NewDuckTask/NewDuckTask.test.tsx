@@ -34,7 +34,6 @@ describe('NewDuckTask Tests', () => {
     const inputNameTask = screen.getByPlaceholderText(/duck name/i)
     const inputDescTask = screen.getByPlaceholderText("What's your duck task?", { exact: false })
     const buttonSubmit = screen.getByRole('button', { name: /submit/i })
-    const duckFile = new File([''], 'google.png', { type: 'image/png' })
 
     await userEvent.clear(inputNameTask)
     await userEvent.clear(inputDescTask)
