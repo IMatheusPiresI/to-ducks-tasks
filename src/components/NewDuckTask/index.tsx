@@ -53,6 +53,7 @@ const NewDuckTask = ({ addDuckTask }: NewDuckTaskProps) => {
             />
             <DescTask
               placeholder="What's your duck task?"
+              data-testid='desc-task'
               value={desc}
               onChange={(e) => setDesc(e.target.value)}
               required

@@ -56,15 +56,19 @@ const ModalDuckEditTask = ({
         <FormInputFile id='editFile' file={file} setFile={setFile} />
         <FormInput
           placeholder='Duck Name'
+          data-testid='inputTitleEdit'
           value={duckName}
           onChange={(e) => setDuckName(e.target.value)}
         />
         <Textarea
           placeholder="What's your duck task"
+          data-testid='inputDescEdit'
           value={duckDesc}
           onChange={(e) => setDuckDesc(e.target.value)}
         />
-        <S.SubmitButton type='submit'>Submit</S.SubmitButton>
+        <S.SubmitButton type='submit' data-testid='submitEdit'>
+          Submit
+        </S.SubmitButton>
       </S.Modal>
     </S.ContainerModal>
   )

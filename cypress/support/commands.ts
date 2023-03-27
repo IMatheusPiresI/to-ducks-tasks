@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+import 'cypress-file-upload'
 // ***********************************************
 // This example commands.ts shows you how to
 // create various custom commands and overwrite
@@ -11,7 +12,12 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add('createTask', (title, desc, filePath) => {
+  cy.get("input[placeholder='Duck Name']").type('My Task')
+  cy.get('[data-testid="desc-task"]').type('My Desc')
+  cy.get('input[type="file"]').attachFile('duck.svg')
+  cy.get("button[type='Submit']").click()
+})
 //
 //
 // -- This is a child command --
@@ -25,13 +31,10 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 //
-// declare global {
-//   namespace Cypress {
-//     interface Chainable {
-//       login(email: string, password: string): Chainable<void>
-//       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
-//       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
-//       visit(originalFn: CommandOriginalFn, url: string, options: Partial<VisitOptions>): Chainable<Element>
-//     }
-//   }
-// }
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      createTask(name: string, desc: string, filePath: string): Chainable<void>
+    }
+  }
+}
